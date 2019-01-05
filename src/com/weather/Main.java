@@ -11,7 +11,7 @@ public class Main {
     private double temp;
     @SerializedName("pressure")
     @Expose
-    private int pressure;
+    private double pressure;
     @SerializedName("humidity")
     @Expose
     private int humidity;
@@ -21,8 +21,16 @@ public class Main {
     @SerializedName("temp_max")
     @Expose
     private double tempMax;
+    @SerializedName("sea_level")
+    @Expose
+    private double  sea_level;
+	@SerializedName("grnd_level")
+    @Expose
+    private double grnd_level;
+    
+    
 
-    public double getTemp() {
+	public double getTemp() {
         return temp;
     }
 
@@ -30,11 +38,11 @@ public class Main {
         this.temp = temp;
     }
 
-    public int getPressure() {
+    public double getPressure() {
         return pressure;
     }
 
-    public void setPressure(int pressure) {
+    public void setPressure(double pressure) {
         this.pressure = pressure;
     }
 
@@ -61,5 +69,19 @@ public class Main {
     public void setTempMax(double tempMax) {
         this.tempMax = tempMax;
     }
+    
+    public double getSea_level() {
+		return sea_level;
+	}
 
+	public void setSea_level(double sea_level) {
+		this.sea_level = sea_level;
+	}
+	public double getGrnd_level() {
+		return grnd_level;
+	}
+
+	public void setGrnd_level(double grnd_level) {
+		this.grnd_level = grnd_level;
+	}
 }

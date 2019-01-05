@@ -28,6 +28,9 @@ public class WeatherObject {
     @SerializedName("rain")
     @Expose
     private Rain rain;
+    @SerializedName("snow")
+    @Expose
+    private Snow snow;
     @SerializedName("dt")
     @Expose
     private int dt;
@@ -100,6 +103,14 @@ public class WeatherObject {
         this.rain = rain;
     }
 
+    public Snow getSnow() {
+        return snow;
+    }
+
+    public void setRain(Snow snow) {
+        this.snow = snow;
+    }
+    
     public int getDt() {
         return dt;
     }
